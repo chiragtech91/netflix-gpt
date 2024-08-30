@@ -1,0 +1,19 @@
+
+.header {padding: 10px 40px; display: flex; justify-content: space-between; align-items: center;}
+.header img {width: 120px;}
+.header .signOutWrap {padding: 10px; display: flex; justify-content: flex-end; gap: 10px; align-items: center;}
+.header .signOutWrap p {margin-bottom: 0;}
+.header .signOutWrap p strong {text-transform: capitalize;}
+
+.footer {text-align: center; padding: 20px; background: rgba(0, 0, 0, 0.8); color: #fff;}
+
+.authForm .homeBG {position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: -1;}
+.authForm form {background: rgba(0, 0, 0, 0.7); width: 100%; max-width: 420px; height: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 5px; padding: 40px 60px; display: flex; flex-direction: column; gap: 12px;}
+.authForm form h2 {color: #fff; font-size: 24px; margin-bottom: 12px;}
+.authForm form .form-control {border-radius: 3px;}
+.authForm form button {margin-top: 20px;}
+.authForm form p {color: #fff; font-size: 13px; cursor: pointer;}
+.authForm form h6 {color: red; font-weight: bold; text-align: center;}
+
+
+
