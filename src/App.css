@@ -1,19 +1,47 @@
+.header {display: flex; justify-content: space-between; align-items: center; box-shadow: 0 0 5px grey; padding: 10px 30px;}
 
-.header {padding: 10px 40px; display: flex; justify-content: space-between; align-items: center;}
-.header img {width: 120px;}
-.header .signOutWrap {padding: 10px; display: flex; justify-content: flex-end; gap: 10px; align-items: center;}
-.header .signOutWrap p {margin-bottom: 0;}
-.header .signOutWrap p strong {text-transform: capitalize;}
+.leftLogos {display: flex; gap: 20px;}
+.leftLogos i {font-size: 20px; cursor: pointer;}
+.leftLogos img {width: 100px;}
 
-.footer {text-align: center; padding: 20px; background: rgba(0, 0, 0, 0.8); color: #fff;}
+.searchWrap {position: relative;}
+.searchWrap ul {position: absolute; top: 40px; left: 0; background: #fff; width: calc(100% - 60px); border-radius: 5px; margin: 0; padding: 0; list-style: none; border: 1px solid grey;}
+.searchWrap ul li {padding: 7px 10px; font-size: 14px; cursor: pointer;}
+.searchWrap ul li:hover {background: #cacaca;}
+.searchWrap ul li:not(:last-of-type) {border-bottom: 1px solid grey;}
+.searchWrap form {display: flex; justify-content: center; align-items: center;}
+.searchWrap form .form-control {width: 480px; border-radius: 40px 0 0 40px; outline: none;}
+.searchWrap form button {border-radius: 0 40px 40px 0; padding: 7px 0; width: 60px; text-align: center;}
 
-.authForm .homeBG {position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: -1;}
-.authForm form {background: rgba(0, 0, 0, 0.7); width: 100%; max-width: 420px; height: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 5px; padding: 40px 60px; display: flex; flex-direction: column; gap: 12px;}
-.authForm form h2 {color: #fff; font-size: 24px; margin-bottom: 12px;}
-.authForm form .form-control {border-radius: 3px;}
-.authForm form button {margin-top: 20px;}
-.authForm form p {color: #fff; font-size: 13px; cursor: pointer;}
-.authForm form h6 {color: red; font-weight: bold; text-align: center;}
+.userWrap {font-size: 24px;}
 
+.defaultNav {width: 80px; padding: 20px 0;}
+.defaultNav ul {margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 20px;}
+.defaultNav ul li {display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 0; font-size: 10px; text-align: center;}
+.defaultNav ul li i {font-size: 20px;}
+
+.hiddenMenu {padding: 0 0 20px; width: 200px; position: fixed; left: -200px; background: #fff; top: 60px; height: calc(100vh - 60px); overflow-y: auto; transition: 0.3s; z-index: 10;}
+.hiddenMenu.open {left: 0;}
+.hiddenMenu h3 {font-size: 20px; font-weight: bold; padding: 0 20px;}
+.hiddenMenu ul {width: 100%; padding: 20px; margin-bottom: 20px;}
+.hiddenMenu ul:not(:last-of-type) {border-bottom: 1px solid grey;}
+.hiddenMenu ul li {flex-direction: row !important; justify-content: flex-start; align-items: center; gap: 10px; text-align: left;}
+.hiddenMenu ul li i {width: 28px;}
+
+.section {display: flex; justify-content: flex-start; align-items: flex-start; flex-wrap: wrap; gap: 20px;}
+.videosWrapper {width: calc(100% - 120px);}
+
+.videoPlay {display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start; gap: 20px;}
+.ytVideo {width: calc(33.3333% - 20px); display: flex; flex-direction: column; gap: 10px;}
+.ytVideo img {width: 100%; border-radius: 15px; aspect-ratio: 16/9; object-fit: cover;}
+.ytVideo .videoWrap {display: flex; align-items: flex-start; gap: 10px; justify-content: flex-start;}
+.ytVideo .videoWrap img {width: 32px; border-radius: 50px; border: 1px solid grey;}
+.ytVideo .videoWrap h3 {font-size: 18px; font-weight: bold;}
+.ytVideo .videoWrap h5 {font-size: 13px;}
+.ytVideo .videoWrap ul {margin: 0; padding: 0; list-style: none; display: flex; justify-content: flex-start; align-items: center;}
+.ytVideo .videoWrap ul li:not(:last-of-type)::after {content: '●'; padding: 0 10px;}
+
+.filters {margin: 15px 0 30px; display: flex; justify-content: flex-start; gap: 10px;}
+.filters button {font-size: 13px;}
 
 
